@@ -1,30 +1,47 @@
-# React + TypeScript + Vite
+# ボイスチャットアプリのセットアップガイド
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+このガイドでは、ボイスチャットアプリのセットアップ手順を詳しく説明します。
 
-Currently, two official plugins are available:
+## 1. Gitリポジトリをクローンする
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+まず、以下のコマンドを使用してGitリポジトリをクローンします：
 
-## Expanding the ESLint configuration
+git clone https://github.com/Kazzzz195/voice-chat-app.git
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## 2. プロジェクトディレクトリに移動
 
-- Configure the top-level `parserOptions` property like this:
+cd voice-chat-app
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+# 3. 依存パッケージをインストール
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+npm install
+または
+yarn install
+
+# 4. .envを作成してキーの情報を環境変数として読み込めるようにします
+
+VITE_VOICEVOX_API_KEYの取得は下から
+https://voicevox.su-shiki.com/su-shikiapis/
+
+$ touch .env
+
+.envファイルに以下の内容を記述します
+
+VITE_VOICEVOX_API_KEY="あなたのキー"
+VITE_OPENAI_API_KEY="あなたのキー"
+
+# 5.  開発サーバーを起動
+
+npm run dev
+# または
+yarn dev
+
+
+ここまでできたらデベロッパーツールをひらいてiphone SEのレイアウトにします。
+
+# 6. 音声入力を試す
+
+音声入力を行うと、ずんだもんが応答してくれます。ChatGPTが素早く応答するため、スムーズな会話が楽しめます。
+音声入力するとずんだもんが答えてくれます！
+ChatGPTが素早いので会話も比較的スムーズです！
+
