@@ -18,7 +18,7 @@ npm install または　yarn install
 
 # 4. .envを作成してキーの情報を環境変数として読み込めるようにします
 
-VITE_VOICEVOX_API_KEYの取得は下から
+VITE_VOICEVOX_API_KEYの取得はこちらから
 https://voicevox.su-shiki.com/su-shikiapis/
 
 $ touch .env
@@ -32,13 +32,12 @@ VITE_OPENAI_API_KEY="あなたのキー"
 
 npm run dev　または　yarn dev
 
-localhost:5173を開きます
+localhost:5173　を開きます
 
 ここまでできたらデベロッパーツールをひらいてiphone SEのレイアウトにします。
 
 # 6. 音声入力を試す
 
 音声入力を行うと、ずんだもんが応答してくれます。ChatGPTが素早く応答するため、スムーズな会話が楽しめます。
-音声入力するとずんだもんが答えてくれます！
-ChatGPTが素早いので会話も比較的スムーズです！
+
 
