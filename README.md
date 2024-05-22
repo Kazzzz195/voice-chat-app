@@ -12,11 +12,9 @@ git clone https://github.com/Kazzzz195/voice-chat-app.git
 
 cd voice-chat-app
 
-# 3. 依存パッケージをインストール
+# 3.以下のコマンドで依存パッケージをインストール
 
-npm install
-または
-yarn install
+npm install または　yarn install
 
 # 4. .envを作成してキーの情報を環境変数として読み込めるようにします
 
@@ -32,10 +30,9 @@ VITE_OPENAI_API_KEY="あなたのキー"
 
 # 5.  開発サーバーを起動
 
-npm run dev
-# または
-yarn dev
+npm run dev　または　yarn dev
 
+localhost:5173を開きます
 
 ここまでできたらデベロッパーツールをひらいてiphone SEのレイアウトにします。
 
